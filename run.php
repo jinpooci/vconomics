@@ -36,7 +36,7 @@ if (strpos($reg[1], 'REGISTER_SUCCESSFUL_NEED_CONFIRM')) {
     $a = true;
     $b = 0;
     while ($a) {
-        if ($b > 10) {
+        if ($b > 5) {
             echo color('red', "\n[+]")." Bad email!\n";
             goto Start;
         }
