@@ -55,7 +55,7 @@ if (strpos($reg[1], 'REGISTER_SUCCESSFUL_NEED_CONFIRM')) {
     if (strpos($ver[1], 'VERIFY_OTP_SUCCESS')) {
         echo color('green', "[+]")." Verification successfuly!\n";
     } else {
-        echo color('red', "[+]")." Error: ".json_decode($reg[1])->messageCode."\n";
+        echo color('red', "[+]")." Error: ".json_decode($ver[1])->messageCode."\n";
     }
     goto Start;
 } else {
