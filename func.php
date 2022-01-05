@@ -1,6 +1,6 @@
 <?php
 
-function gendata($domain = "txtsu.site") {
+function gendata($domain = "sitik.site") {
     $data = json_decode(file_get_contents("https://swappery.site/data.php?qty=1&domain=".$domain))->result[0];
     return $data;
 }
